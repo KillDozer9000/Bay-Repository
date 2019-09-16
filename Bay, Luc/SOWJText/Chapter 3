@@ -1,0 +1,108 @@
+Chapter 3 Section 1
+MC
+ B
+A
+B
+D
+C
+A
+B
+C
+C
+
+FTE 
+     3. You cant use 10 as your condition for the for loop. The last element is 9 so if you use 10 it will not work
+
+SA
+    4. You can set the values of it in the initialization step and that gives it a length
+    6. It is okay
+
+PC 
+8 (the programming process still applies here)
+
+Chapter 3 Section 2
+MC 
+15. true
+16. false
+
+SA
+8. Its when a methods parameter is a copy of the given parameter
+11. The parameters are the variables assigned to the argument you give the method when you run it
+
+Chapter 3 Section 3
+MC
+17. true
+
+SA
+5. The same class methods
+
+Chapter 3 Section 4
+MC
+10. B
+12. C
+14. True
+18. False
+
+FTE
+You re not supposed to have the void
+
+AW
+1.B. Public class Pet()
+	 {
+       Private String animal;
+       Private String name;
+       Private int age;
+
+       Public Pet(String anim, String na, String ag)
+	   {
+         Animal = anim;
+         Name = na;
+         Age = ag;
+       }
+       Public getinsertvariablenamehere()
+       {
+         Return insertvariablenamehere;
+       }
+       Public String setname/animal(String a)
+       {
+         name/animal = a;
+         Return name/animal;
+       }
+       Public String setage(int ag)
+       {
+         Age = ag;
+         Return age;
+       }
+
+}
+2.A. Public Book(String ti, String au, String pub, int co)
+	 {
+        Title = ti;
+        Author = au;
+        Publisher = pub;
+        copiesSold = co;
+     }
+   B.  Public getinsertvariablenamehere()
+       {
+    	Return insertvariablenamehere;
+       }
+       Public String settitle/author/publisher(String a)
+       {
+    	title/author/publisher = a;
+    	Return title/author/publisher;
+       }
+       Public int setcopies(int a)
+       {
+    	CopiesSold = a;
+    	Return copiesSold;
+       }
+
+SA
+12. If there is no given constructor
+13. A no argument constructor
+
+PC
+4. Called Chp3Pc4 and Chp3Pc4Runner
+7. Called Chp3Pc7 and Chp3Pc7Runner
+
+

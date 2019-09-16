@@ -1,0 +1,50 @@
+Chapter 7 Section 1
+MC 
+2. A
+3. B
+4. D
+5. C
+6. A
+16. True
+17. True
+19. True
+20. False
+
+FTE
+1. You cant have an array with length -20
+2. You need the curly brackets
+3. The condition cannot be <=. It has to be < or the program will go out of bounds
+4. That’s not how the length method works
+5. You have to specify which element you want to uppercase
+
+AW
+for(int counter = 0; counter < names.length; counter++)
+		System.out.print(names[counter]);
+
+SA
+3. 2
+   14
+    8
+
+PC
+In repository under Programming Projects : Chp7Pc1
+
+Chapter 7 Section 2
+AW
+	In repository under Programming Projects : Chp7Aw2
+
+SA
+5. Because all it does is change array1’s location. It does nothing to the array it pointed to.
+
+Chapter 7 Section 3
+MC
+21. False
+Swap Method: SOWJCode/Ch7Swap
+Random Method: SOWJCode/Chp7Random
+Chapter 7 Section 4
+PC 10: SOWJCode/Chp7Pc10
+
+
+
+
+

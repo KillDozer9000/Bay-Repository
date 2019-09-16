@@ -1,0 +1,69 @@
+Section 4.1
+MC  1. A, decision structure
+    2. D, boolean
+    3. A, relation operators
+    5. C, null statement
+    6. D, braces
+    7. A, flag
+    8. B, A is less than B
+    15. False
+    16. True
+    17. True
+FTE 2. There is only one equal sign, not two
+AW  1. if(y == 0)
+	X = 100;
+4. if(flag)
+	Hours = 10;
+SA 1. If it only executed if the condition is met
+   2. The program will not think is it the end of a command so it will do the wrong thing
+   3. So you know what is part of the if and what is not
+   5. A flag variable is one of boolean that only stores true or false. 
+
+Section 4.2
+FTE 3. The program will print the last two lines no matter what because there are no braces
+AW  2. if(y == 10)
+		X = 0;
+	Else
+		X = 1;
+
+Section 4.4
+FTE 1. The last else if has to be an else. The conditional statements need an else
+AW  3. if(sales > 10000)
+		Rate = .1;
+	Else if(sales < 15000)
+		Rate = .2;
+	Else
+		Rate = .15;
+SA 6. There is no default action if the conditions are not met
+PC 3. In src/Programming projects/ Chp4Pc3
+      5.  In src/Programming projects/ Chp4Pc5
+
+Section 4.5
+MC 9. A, nested
+   10. A, the closest previous if clause that doesn't already have its own else clause.
+   18. True
+   19. False
+AW 5. if(amount1 > 10 && amount2 < 100)
+	{
+	if(amount1 > amount2)
+		System.out.print(amount1);
+	Else
+		System.out.print(amount2);
+	}
+	
+Section 4.6
+MC  11. A, &&
+FTE 5. The ! is in the wrong place, it must go before the <
+    6. It has an or, not an and. Only one condition has to be met, not both
+    7. It has an and, not an or. Both conditions must be met and that is impossible
+AW  6. if(0 < grade < 100)
+		System.out.print("The number is valid");
+    7. if( -50 < temperature < 50)
+	System.out.print("The number is valid");
+    8. if( 0 > hours || 80 < hours)
+	System.out.print("The number is not valid");
+SA 7. Both of the conditions in an and statement must be met to return a true
+   8. one of the conditions in an or statement must be met to return a true
+PC 1.  In src/Programming projects/ Chp4Pc1
+   4.  In src/Programming projects/ Chp4Pc4
+

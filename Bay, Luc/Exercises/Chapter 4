@@ -1,0 +1,28 @@
+Chapter 4 Exercises
+
+4.1 - 4.3------------------------------
+R4.4  | An integer can not hold any number over/under -+2,147,483,647 and a floating points limit is -+9,223,372,036,854,775,808
+R4.5  | int n = (int)(10.54); yes
+R4.6  | double = ((int)(x*100))/100;
+R4.7  | The first chops of the decimal while the second rounds it
+R4.8  | ???
+R4.15 | A final variable is a variable that cannot be changed after given a variable, yes
+P4.5  | In AP Stuff/p4/DataSet1 and DataSetRunner1
+P4.6  | In AP Stuff/p4/DataSet2 and DataSetRunner2
+
+4.4 & 4.5------------------------------
+R4.1  | ???
+R4.3  | The sqrt takes two parameters, not just one
+R4.10 | y = 4, t = "22";
+R4.13 | For the last, do x%10 and for the first do (int)((x/1000)*10000)
+R4.16 | 6.25, 6.5, 11.7, root2, 3, 4, HelloWorld, Hello4, ell, 10
+P4.12 | In AP Stuff/p4/P4_12
+P4.18 | In AP Stuff/p4/Easter and EasterRunner
+
+4.6 & 4.7------------------------------
+R4.11 | True, true, true
+R4.12 | s.subString(0), s.subString(s.length()-1), s.subString(1, s.length()-1), s.subString(0, s.length()-2)
+P4.11 | In AP Stuff/p4/CashRegister and CashRegisterRunner
+P4.15 | In AP Stuff/p4/HelloPrinter and Letter...
+
+P4.14 | In AP Stuff/p4/TimeSubtracter

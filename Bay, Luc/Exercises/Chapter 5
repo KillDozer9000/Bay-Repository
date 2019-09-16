@@ -1,0 +1,44 @@
+Chapter 5 Exercises
+
+5.1 & 5.2------------------------------
+R5.8  | true
+R5.12 | the == is meant to be used with primitive types and functions the same for all of them. The equals is a method meant for objects
+R5.13 | the first will only be true if r and s point to the same operator. The second will be true if the objects are the same
+R5.14 | you can't run a method on null, you'll get an error
+P5.2  | In AP Stuff/p5/Card and CardRunner
+P5.3  | In AP Stuff/p5/Sorter
+
+5.3 & 5.4------------------------------
+R5.3  | the program will only get to the second if if the first is true for the second. For the first it will always reach it
+R5.4  | ????
+R5.9  | for the second it might not get to the else if even if it was true but for the first it always will
+R5.10 | x >= 0 || y >= 0       x = 0 && y = 0       !a || b || c       x%4 == 0 && x%100 == 0 && x%400 == 0
+P5.11 | In AP Stuff/p5/Compare and CompareTester
+P5.13 | In AP Stuff/p5/Paycheck and PaycheckRunner
+
+P5.14 | In AP Stuff/p5/UnitConverter and UnitConverterRunner
+P5.15 | In AP Stuff/p5/UnitConverter and UnitConverterRunner
+
+Right Barrons MC
+1. B
+2. B
+3. C
+4. A
+5. E
+6. D
+7. E
+8. A
+9. A
+10. C
+11. D
+12. D
+13. D E
+14. B E
+15. E A
+16. E
+17. E
+18. D C
+19. E C
+20. B
+21. A
+22. E

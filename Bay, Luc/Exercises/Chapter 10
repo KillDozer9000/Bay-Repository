@@ -1,0 +1,25 @@
+Chapter 10
+
+10.1 & 10.2---------------------------------------
+R10.2  | BankAccount has a constructor that takes an initial balance and it has a default constructor
+		 SavingsAccount inherits these with a small change
+R10.4  | Employee, Polygon, Student, Person, Employee, BankAccount, Vehicle, Vehicle, Car, Vehicle
+R10.7  | Vehicle
+		 Truck,          Car,                   Bicycle,   MotorCycle
+		 Pickup, Sport   Sedan, Coupe, Minivan
+
+10.3---------------------------------------
+R10.1  | 2750
+P10.2  | In AP Stuff/p10/TimeDepositAccount
+
+10.4 & 10.5---------------------------------------
+R10.3  | yes with a cast, yes
+R10.5  | B, D
+R10.9  | ???
+R10.10 | The super keyword increases the scope of a variable along with the this keyword
+P10.5  | In AP Stuff/p10/Employee, Manager, Executive
+
+10.6 & 10.7---------------------------------------
+R10.11 | The second
+R10.12 | ???
+P10.6  | In AP Stuff/p10/Worker, HourlyWorker, SalariedWorker

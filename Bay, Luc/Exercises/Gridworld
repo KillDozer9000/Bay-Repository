@@ -1,0 +1,24 @@
+1. act, getActors, processActors, getMoveLocations, selectMoveLocation
+2. Same as above
+3. Yes, each actor has a different location so the Critter class has to override it to have its own location
+4. It could change their direcitons, color, or make them eat
+5. getMoveLocations give the critter all the open spaces around it
+   selectMoveLocation chooses one of them
+   makeMove moves the critter to the selected location
+6. It just uses the default constructor
+
+1. The ChameleonCritter overrides the processActors and makeMove methods making it act differently
+2. It calls super to call the Critter method so it can act like a Critter
+3. You would change the makeMove to put a flower in the old location as long as it has changed
+4. Because both Chameleon and Critter use it in the same way so it does not have to override it
+5. The Actor class so all the actors can use the method
+6. It can call the getGrid method in the Actor class
+
+1. It does not need to override getActors in Critter as they have the same behavior with that method
+2. The CrabCritter eats anything infront of it and to its sides. It gets these locations with getActors and eats them with processActors
+3. The CrabCritter uses the method to determine which actors around it it can eat
+4. 4,3 4,4 4,5
+5. They both chose random directions and do not change directions when moving
+   CrabCritter only moves left and right, it also turns 90 degrees when it cant move. Critter moves in all 8 directions
+6. If the loc parameter is the same as its current, it turns
+7. The processActors only removes actors that aren't rocks or critters. A crab is a critter

@@ -1,0 +1,97 @@
+Chapter 2.2------------------------------
+MC 5.) A C D
+PtO 3.) I am the incredible computing
+        machine 
+        and I will
+        amaze
+        you
+        
+	4.)Be careful
+	   this might /n be a trick question
+	   
+SA 5.) Both System and out need to go before print and println for them to work
+PC 3.) File is called PC3 in the ProgrammingProject package
+
+Section 2.3-----------------------------
+2. B Literals
+17. True
+18. False
+
+3. A self-documenting program is a when the function and process of the program can be understood just by looking at the code.
+6. It tells java what type of variable it is. It could be a number, a character, a number with a decimal etc.
+7. They are not recommended because they do not given any information on what the variable could be used for. This can make the program very confusing especially when there are many variables
+
+Section 2.4------------------------------
+4. B
+
+1. Double temp, weight, age;
+2. Int days, months = 2, years = 2;
+3. Int a, b;
+    char c;
+    B = a + 2;
+    A = b * 4;
+    B = a / 3.14;
+    A = b - 8;
+    C = K;
+    C = 66;
+4. A. 12
+    B. 4
+    C. 2
+    D. 6
+    E. 1
+5. A. 3.287E6
+    B. -9.7865E12
+    C. 7.65491E-3
+
+1. 0
+    100
+
+Section 2.5-----------------------------------
+21. False
+7. Int time, speed, distance = 0;
+    Speed = 20;
+    Time = 10;
+   Distance = time * speed;
+   System.out.print("Distance = " + Distance);
+8. Int force, area, pressure = 0;
+    Force = 172.5;
+    Area = 27.5;
+    Pressure = area / force
+    System.out.print("Pressure = " + Pressure);
+
+7.
+Purpose: To calculate the number of acres in a tract of land
+input : square feet, 
+Process: ask for square feet
+	   Store square feet
+	   Number of acres = square feet / size of an acre (given value)
+	   Display Number of acres
+Output: The number of acres is : Number of acres
+
+Int sqfeet = 389,767;
+int ftperacre = 43,560;
+Int acres = 0;
+Acres = sqfeet / ftperacre;
+System.out.print(“Your plot of land is” + acres + “ acres”);
+
+
+Chapter 2.7----------------------------------
+MC 14.)
+   15.)
+   
+Chapter 2.8----------------------------------
+MC 7.)
+   19.)
+SA 12.)
+
+Chapter 2.9---------------------------------
+PC 2.)
+CodingBat String(?)
+
+Chapter 2.11--------------------------------
+MC 8.)
+   9.)
+   10.)
+SA 13.)
+
+Chapter 2.13-------------------------------

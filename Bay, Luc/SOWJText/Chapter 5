@@ -1,0 +1,103 @@
+5.1 + 5.2
+MC	1. B, 6
+	2. D, none
+	4. D, iteration
+	9. C, infinite
+SA	2. So you know what is inside of the loop and what isnt
+	10. int x = 5;
+		if(x==5)
+			println(x);
+		or
+		while(true)
+	
+5.3
+AW	11. double input = 0;
+		while(input <= 1 || input >=5)
+		{
+			System.out.print("put a number between 1 and 5: \n");
+			input = fromKeyboard.nextDouble();
+			if(input >= 1 && input <= 5)
+			{
+				System.out.print("valid input \n");
+				break;
+			}
+			else
+				System.out.print("not valid input \n");
+		}
+	12. 		String yes = "yes";
+		String no = "no";
+		int lengthy = yes.length();
+		int lengthn = no.length();
+		int indexy = -1;
+		int indexn = -1;
+		while(indexy == -1 && indexn == -1)
+		{
+			System.out.print("put in yes or no: \n");
+			String input = fromKeyboard.nextLine();
+			int inlength = input.length();
+			indexy = input.indexOf(yes);
+			indexn = input.indexOf(no);
+			if(indexy != -1 && inlength == lengthy)
+			{
+				System.out.print("Valid Input \n");
+				break;
+			}
+			else if(indexn != -1 && inlength == lengthn)
+			{
+				System.out.print("Valid Input \n");
+				break;
+			}
+			else
+				System.out.print("Invalid Input \n");
+		}
+	
+5.5
+MC	5. A, loop control variable
+	11. A, initialization expression
+	24. False
+AW  3.	int number = 0;
+		while(number <=1000)
+		{
+			System.out.print(number + "\n");
+			number += 10;
+		}
+
+5.6
+MC	12. D, accumulator
+	13. A, sentinel
+AW	1.	int product = 0;
+		while(true)
+		{
+			System.out.print("Put a number: \n");
+			int number = fromKeyboard.nextInt();		
+			product = number*10;
+			if(product <= 100)
+				System.out.print("The product is" + product + "\n");
+			else
+				System.out.print("not valid \n");
+		}
+	4.	int count = 0;
+		while(count < 10)
+		{
+			System.out.print("Put a number: \n");
+			int input = fromKeyboard.nextInt();
+			count++;
+		}
+	5. 	int count = 1;
+		while(count <= 30)
+		{
+			int bottom = 31-count;
+			System.out.print(count+"/"+bottom+"\n");
+			count++;
+		}
+	9.	for(int count = 0;count<50;count++)
+			System.out.println("count is " + count);
+	10.	int x = 50;
+		while(x > 0)
+		{
+			System.out.println(x + " seconds to go.");
+			x--;
+		}
+PC	1.	in programmingprojects package
+	2.	in programmingprojects package
+	4. 	in programmingprojects package

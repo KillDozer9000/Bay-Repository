@@ -1,0 +1,33 @@
+Chapter 2 Exercises
+
+2.1 - 2.3-----------------------------------
+R2.5 The difference between the two is that in java, the equals sign sets one thing equal to another, changing its value.
+	 In math, the sign shows that what's on the left side of the sign has the same value as what's on the right side.
+	 
+2.4 - 2.7-----------------------------------
+R2.4 Rectangle new Rectangle();
+	 Rectangle rectvar;
+			
+R2.7 Rectangle rect = new Rectangle(100, 100, 50, 50);
+	 String str = "Hello, Dave!";
+	 
+R2.8 its missing the new Rectangle
+  
+R2.9 you don't have the constructure part of the line for the parathesises to go with
+	 you're trying to make a new object while also making a new variable
+	 you never constructed the variable "r"
+	 you forgot to add the "Rectangle" before the "r"
+	 
+P2.2 In src -> p2 -> P2_2
+P2.3 In src -> p2 -> P2_3
+P2.4 In src -> p2 -> P2_4
+P2.9 In src -> p2 -> P2_9
+
+2.8 - 2.10--------------------------------
+R2.3 A class is a program has all the methods and variables that an object uses
+R2.10 getWidth() and getHeight()  setWidth() and setHeight()
+R2.11 It would change the top left corner to (0,0) while keeping the bottom right at (25,40)
+P2.5 In src -> p2 -> P2point5
+
+Project 2.1 (Calendar) In src -> p2 -> Calendar
+

@@ -1,0 +1,24 @@
+1. 8 bits
+2. 3 bytes for each rbg value
+3. 307200
+
+1. (200, 0, 200)
+2. (200, 200, 0)
+3. (100, 0, 255)
+4. (255, 255, 255)
+
+1. 0
+2. 0
+3. 639
+4. 479
+5. top to bottom
+6. left to right
+7. Yes
+
+1. No
+2. Yes
+3. No because it is an interface and interfaces cannot be created
+4. Yes simple is a type of digital
+5. Yes picture is a type of digital
+6. Yes picture is a type of simple
+7. No simple is not a type of picture

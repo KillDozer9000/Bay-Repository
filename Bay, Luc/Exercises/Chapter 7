@@ -1,0 +1,24 @@
+Chapter 7 Exercises
+
+7.1-------------------------
+R7.17 | True, True, False, True, True, False, True, False
+R7.7  | In APStuff/p7/FillArrays
+R7.8  | In APStuff/p7/FillArrays
+R7.10 | They are null
+P7.8  | In APStuff/p7/AltSum
+
+7.5-------------------------
+R7.13 | A method that adds all the elements of an array, A method that replaces all the 5s with 1s, A method that returns the number of each element
+R7.15 | Parallel arrays have the same length and contents. They are usually a not needed and are just a waste of memory. They can be replaced by objects
+R7.16 | In APStuff/p7/FillArrays
+
+7.2-------------------------
+R7.18 | False, False, True, True
+P7.2  | In APStuff/p7/Purse and PurseRunner
+P7.3  | In APStuff/p7/Purse and PurseRunner
+P7.4  | In APStuff/p7/Purse and PurseRunner
+P7.5  | In APStuff/p7/Purse and PurseRunner
+P7.6  | In APStuff/p7/Purse and PurseRunner
+
+7.6 & 7.1 - 7.3-------------
+P7.13 | In APStuff/p7/MagicSquare and MagicSquareRunner

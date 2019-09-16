@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="AP Stuff"/>
+	<classpathentry kind="src" path="Intro Stuff"/>
+	<classpathentry exported="true" kind="lib" path="Libs/core.jar"/>
+	<classpathentry exported="true" kind="lib" path="Libs/finch.jar"/>
+	<classpathentry exported="true" kind="lib" path="Libs/jnaerator-0.9.5.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry exported="true" kind="lib" path="Libs/libs/core.jar"/>
+	<classpathentry exported="true" kind="lib" path="Libs/libs/finch.jar"/>
+	<classpathentry exported="true" kind="lib" path="Libs/libs/gridworld.jar"/>
+	<classpathentry exported="true" kind="lib" path="Libs/libs/gstreamer-java.jar"/>
+	<classpathentry exported="true" kind="lib" path="Libs/libs/jna.jar"/>
+	<classpathentry exported="true" kind="lib" path="Libs/libs/jnaerator-0.9.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="Libs/libs/video.jar"/>
+	<classpathentry exported="true" kind="lib" path="Libs/gridworld.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

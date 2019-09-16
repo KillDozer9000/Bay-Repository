@@ -1,0 +1,18 @@
+Chapter 13
+
+13.1------------------------------------
+R13.2  | Exactly like Biggest but with the > changed to <
+P13.1  | In APStuff/p13/Reverse
+P13.2  | In APStuff/p13/Reverse
+P13.4  | In APStuff/p13/Find
+
+
+13.3------------------------------------
+P13.6  | In APStuff/p13/Biggest
+P13.7  | In APStuff/p13/Sum
+
+
+13.2------------------------------------
+R13.4  | Go through array and run progam with one element removed each time
+P13.9  | In APStuff/p13/SubstringGenerator
+P13.10 | In APStuff/p13/SubsetGenerator

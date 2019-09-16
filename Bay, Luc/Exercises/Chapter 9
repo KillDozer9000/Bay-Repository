@@ -1,0 +1,24 @@
+Chapter 9 Exercises
+
+9.1---------------
+P9.1  | In APStuff/p9/DataSet, Die, DieRunner
+P9.4  | In APStuff/p9/DataSet, Die, DieRunner
+P9.9  | In APStuff/p9/CompDataSet, Comparable, CompRunner
+P9.10 | In APStuff/p9/Coin, Comparable
+
+9.2---------------
+R9.1  | A, C
+R9.2  | None
+R9.3  | A, C
+R9.4  | An object cast makes the reference the type of the object
+R9.6  | A, B, F, G
+P9.2  | In APStuff/p9/Quiz, QuizRunner, DataSet
+
+9.3---------------
+R9.7  | Because s.getBounds can work with other object types, not just rectangle
+
+9.4---------------
+R9.9  | You only need the 9.1 one as it gives you the highest and average so it would be easier
+P9.5  | In APStuff/p9/MeasurerDataSet
+P9.6  | In APStuff/p9/RectangleRunner, RectangleMeasurer
+P9.7  | 
