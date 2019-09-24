@@ -13,23 +13,39 @@ public class MyLinkedListTest extends TestCase
     {
         realLinkedList = new LinkedList<Integer>();
         myLinkedList = new MyLinkedList<Integer>();
+        
+        
+        
         for(int x = 10; x >= 1; x--)
         {
             realLinkedList.add(x);
             myLinkedList.add(x);
         }
+        
+        System.out.print(myLinkedList.getNodeBeforeIndex(10));
+        
+        System.out.print(myLinkedList.toString());
+        
         assertTrue(realLinkedList.toString().equals(myLinkedList.toString()));
+        
     }
 
     public void tearDown()
     {
+    	System.out.println("teardown");
         realLinkedList = null;
         myLinkedList = null;
     }
     
+    public void test()
+    {
+    	System.out.print("hello");
+    }
+    
     public void testAdd()
     {
-        realLinkedList.add(4, 7);
+    	System.out.print("hello");
+        realLinkedList.add(4,7);
         myLinkedList.add(4, 7);
         assertTrue(realLinkedList.toString().equals(myLinkedList.toString()));
         

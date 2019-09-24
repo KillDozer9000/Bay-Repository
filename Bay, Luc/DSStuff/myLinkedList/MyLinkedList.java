@@ -5,35 +5,57 @@ import java.util.NoSuchElementException;
 public class MyLinkedList<E>
 {    
 	
-	private Object head;
-	private Object tail;
-	private Object cur;
-	private int size;
+	private ListNode head;
+	private ListNode tail;
+
+	private int size = 0;
 	
     public MyLinkedList()
     {
-       head = null;
-       tail = null;
+    	head = new ListNode(null);
+    	tail = new ListNode(null);
+    	
+    	head = tail;
+    	
+    }
+    
+    public E getNodeBeforeIndex(int i)
+    {
+    	ListNode curr = head.next;
+    	
+    	for(int j=0; j < i; j++)
+    		curr = curr.next;
+    	
+    	return (E) curr;
     }
     
     public boolean add(E o)
     {
+    	add(size-1, o);
+    	
         return true;
     }
     
     public void add(int index, E element)
     {
-        
+    	ListNode curr = (ListNode) getNodeBeforeIndex(index);
+    	
+    	ListNode<E> newelem = new ListNode<E>(element, curr, curr.next);
+    	
+    	curr.next.prev = newelem;
+    	curr.next = newelem;
+    	
+    	size++;
     }
     
     public void addFirst(E o)
     {
-        
+    	add(size, o);
     }
     
     public void addLast(E o)
     {
-        
+    	add(o);
     }
     
     public E getFirst()
@@ -41,7 +63,7 @@ public class MyLinkedList<E>
     	if(head == null)
     		throw new NoSuchElementException();
     	
-        return (E)head;
+        return (E)head.next;
     }
     
     public E getLast()
@@ -49,16 +71,20 @@ public class MyLinkedList<E>
     	if(tail == null)
     		throw new NoSuchElementException();
     	
-        return (E)tail;
+        return (E)tail.prev;
     }
     
     public E removeFirst()
     {
+    	size--;
+    	
         return null;
     }
     
     public E removeLast()
     {
+    	size--;
+    	
     	return null;
     }
     
@@ -69,7 +95,12 @@ public class MyLinkedList<E>
     
     public E get(int index)
     {
-    	return null;
+    	ListNode<E> curr = head;
+    	
+    	for(int i=0; i < size; i++)
+    		curr = curr.next;
+    		
+    	return curr.value;
     }
     
     public boolean isEmpty()
@@ -79,11 +110,15 @@ public class MyLinkedList<E>
     
     public E remove()
     {
+    	size--;
+    	
     	return null;
     }
     
     public E remove(int index)
     {
+    	size--;
+    	
     	return null;
     }
     
@@ -99,7 +134,19 @@ public class MyLinkedList<E>
     
     public String toString()
     {
-    	return null;
+    	
+    	ListNode curr = head.next;
+    	String str = "[";
+    	
+    	for(int i=0; i<size-1; i++)
+    	{
+    		str += curr.value + ", ";
+    		curr = curr.next;
+    	}
+    	
+    	str+= curr.next.value+"]";
+    	
+    	return str;
     }
     
     private class ListNode<E>
