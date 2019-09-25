@@ -1,0 +1,17 @@
+R20.1 | Tom Dick Harry
+R20.2 | Harry Tom Dick
+R20.3 | Dick Tom Harry
+R20.5 | Tom Romeo Juliet Harry
+P20.1 | In DSStuff/p20/p201
+P20.2 | In DSStuff/p20/p202
+
+R20.6 | I can draw on a white board if you want but not on this text document.
+R20.7 | same thing ^
+P20.3 | Reverse method in myLinkedList
+P20.6 | Literally just the size variable in myLinkedList
+P20.7 | removeLast and addLast in myLinkedList
+P20.8 | ???
+
+R20.8 | adding and removing elements is much easier, but it is harder to access elements
+R20.9 | I would use an array so accessing the elements is easier. It would take much longer than with a list
+R20.10| I would use a list so I can easily add and subtract events. There wont be many elements so an array would not be necessary.

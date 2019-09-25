@@ -19,6 +19,23 @@ public class MyLinkedList<E>
     	
     }
     
+    public void reverse()
+    {
+    	ListNode curr = head;
+    	ListNode before = null;
+    	
+    	while(curr != null)
+    	{
+    		ListNode temp = curr.next;
+    		curr.next = before;
+    		before = curr;
+    		curr = temp;
+    	}
+    	
+    	head = tail;
+    	head = before;
+    }
+    
     public E getNodeBeforeIndex(int i)
     {
     	ListNode curr = head.next;
@@ -85,7 +102,7 @@ public class MyLinkedList<E>
     {
     	size--;
     	
-    	return null;
+    	return remove();
     }
     
     public void clear()
@@ -112,7 +129,7 @@ public class MyLinkedList<E>
     {
     	size--;
     	
-    	return null;
+    	return remove(size-1);
     }
     
     public E remove(int index)
