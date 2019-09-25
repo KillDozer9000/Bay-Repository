@@ -5,15 +5,15 @@ import java.util.NoSuchElementException;
 public class MyLinkedList<E>
 {    
 	
-	private ListNode head;
-	private ListNode tail;
+	private ListNode<E> head;
+	private ListNode<E> tail;
 
 	private int size = 0;
 	
     public MyLinkedList()
     {
-    	head = new ListNode(null);
-    	tail = new ListNode(null);
+    	head = new ListNode<E>(null);
+    	tail = new ListNode<E>(null);
     	
     	head = tail;
     	
@@ -21,12 +21,12 @@ public class MyLinkedList<E>
     
     public void reverse()
     {
-    	ListNode curr = head;
-    	ListNode before = null;
+    	ListNode<E> curr = head;
+    	ListNode<E> before = null;
     	
     	while(curr != null)
     	{
-    		ListNode temp = curr.next;
+    		ListNode<E> temp = curr.next;
     		curr.next = before;
     		before = curr;
     		curr = temp;
@@ -38,12 +38,12 @@ public class MyLinkedList<E>
     
     public E getNodeBeforeIndex(int i)
     {
-    	ListNode curr = head.next;
+    	ListNode<E> curr = head.next;
     	
     	for(int j=0; j < i; j++)
     		curr = curr.next;
     	
-    	return (E) curr;
+    	return (E)curr;
     }
     
     public boolean add(E o)
@@ -55,7 +55,7 @@ public class MyLinkedList<E>
     
     public void add(int index, E element)
     {
-    	ListNode curr = (ListNode) getNodeBeforeIndex(index);
+    	ListNode<E> curr = (ListNode) getNodeBeforeIndex(index);
     	
     	ListNode<E> newelem = new ListNode<E>(element, curr, curr.next);
     	
@@ -95,7 +95,7 @@ public class MyLinkedList<E>
     {
     	size--;
     	
-        return null;
+        return remove(0);
     }
     
     public E removeLast()
@@ -107,7 +107,7 @@ public class MyLinkedList<E>
     
     public void clear()
     {
-        
+        head.next = tail.prev;
     }
     
     public E get(int index)
@@ -141,6 +141,8 @@ public class MyLinkedList<E>
     
     public E set(int index, E element)
     {
+    	ListNode<E> elem = (ListNode) getNodeBeforeIndex(index);
+    	
     	return null;
     }
     
@@ -152,7 +154,7 @@ public class MyLinkedList<E>
     public String toString()
     {
     	
-    	ListNode curr = head.next;
+    	ListNode<E> curr = head.next;
     	String str = "[";
     	
     	for(int i=0; i<size-1; i++)
