@@ -14,17 +14,20 @@ public class MyLinkedListTest extends TestCase
         realLinkedList = new LinkedList<Integer>();
         myLinkedList = new MyLinkedList<Integer>();
         
-        
-        
-        for(int x = 10; x >= 1; x--)
+        for(int x = 5; x >= 1; x--)
         {
             realLinkedList.add(x);
             myLinkedList.add(x);
         }
         
-        System.out.print(myLinkedList.getNodeBeforeIndex(10));
+        System.out.println("my:   "+myLinkedList.toString());
+        System.out.println("real: "+realLinkedList.toString());
         
-        System.out.print(myLinkedList.toString());
+        System.out.println("my:   "+myLinkedList.set(1, -23212124));
+        System.out.println("real: "+realLinkedList.set(1, -23212124));
+        
+        System.out.println("Smy:   "+myLinkedList.toString());
+        System.out.println("Sreal: "+realLinkedList.toString());
         
         assertTrue(realLinkedList.toString().equals(myLinkedList.toString()));
         
@@ -37,14 +40,8 @@ public class MyLinkedListTest extends TestCase
         myLinkedList = null;
     }
     
-    public void test()
-    {
-    	System.out.print("hello");
-    }
-    
     public void testAdd()
     {
-    	System.out.print("hello");
         realLinkedList.add(4,7);
         myLinkedList.add(4, 7);
         assertTrue(realLinkedList.toString().equals(myLinkedList.toString()));
@@ -82,7 +79,7 @@ public class MyLinkedListTest extends TestCase
     }
     
     public void testGet()
-    {
+    {	
         for(int i = 0; i < realLinkedList.size(); i++)
             assertTrue(realLinkedList.get(i).equals(myLinkedList.get(i)));
         

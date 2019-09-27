@@ -15,11 +15,11 @@ public class MyLinkedList<E>
     	head = new ListNode<E>(null);
     	tail = new ListNode<E>(null);
     	
-    	head = tail;
-    	
+    	head.next = tail;
+    	tail.prev = head;
     }
     
-    public void reverse()
+    public void reverse()//only works for singly linked lists w no dummy nodes
     {
     	ListNode<E> curr = head;
     	ListNode<E> before = null;
@@ -36,38 +36,51 @@ public class MyLinkedList<E>
     	head = before;
     }
     
-    public E getNodeBeforeIndex(int i)
-    {
-    	ListNode<E> curr = head.next;
+    public ListNode<E> getNodeBeforeIndex(int i)
+    {	
+    	if(i < (size/2))
+    	{
+    		ListNode<E> before = head;
+    		
+    		for(int j=0; j < i; j++)
+    			before = before.next;
     	
-    	for(int j=0; j < i; j++)
-    		curr = curr.next;
+    		return before;
+    	}
     	
-    	return (E)curr;
+    	ListNode<E> before = tail;
+    	
+    	for(int j=0; j < (size-i+1); j++)
+    		before = before.prev;
+    	
+    	return before;
     }
     
     public boolean add(E o)
     {
-    	add(size-1, o);
+    	add(size, o);
     	
         return true;
     }
     
     public void add(int index, E element)
     {
-    	ListNode<E> curr = (ListNode) getNodeBeforeIndex(index);
+    	if(index < 0 || index > size)
+    		throw new IndexOutOfBoundsException();
     	
-    	ListNode<E> newelem = new ListNode<E>(element, curr, curr.next);
+    	ListNode<E> beforeIndex = getNodeBeforeIndex(index);
     	
-    	curr.next.prev = newelem;
-    	curr.next = newelem;
+    	ListNode<E> newElem = new ListNode<E>(element, beforeIndex, beforeIndex.next);
+    	
+    	newElem.next.prev = newElem;
+    	beforeIndex.next = newElem;
     	
     	size++;
     }
     
     public void addFirst(E o)
     {
-    	add(size, o);
+    	add(0, o);
     }
     
     public void addLast(E o)
@@ -77,47 +90,33 @@ public class MyLinkedList<E>
     
     public E getFirst()
     {
-    	if(head == null)
-    		throw new NoSuchElementException();
-    	
-        return (E)head.next;
+        return head.next.value;
     }
     
     public E getLast()
-    {
-    	if(tail == null)
-    		throw new NoSuchElementException();
-    	
-        return (E)tail.prev;
+    { 	
+        return tail.prev.value;
     }
     
     public E removeFirst()
     {
-    	size--;
-    	
         return remove(0);
     }
     
     public E removeLast()
     {
-    	size--;
-    	
-    	return remove();
+    	return remove(size-1);
     }
     
     public void clear()
     {
-        head.next = tail.prev;
+        head.next = tail;
+        tail.prev = head;
     }
     
     public E get(int index)
-    {
-    	ListNode<E> curr = head;
-    	
-    	for(int i=0; i < size; i++)
-    		curr = curr.next;
-    		
-    	return curr.value;
+    {		
+    	return getNodeBeforeIndex(index).next.value;
     }
     
     public boolean isEmpty()
@@ -127,23 +126,33 @@ public class MyLinkedList<E>
     
     public E remove()
     {
-    	size--;
-    	
-    	return remove(size-1);
+    	return remove(0);
     }
     
     public E remove(int index)
     {
+    	if(index < 0 || index > size)
+    		throw new IndexOutOfBoundsException();
+    	
+    	ListNode<E> before = getNodeBeforeIndex(index);
+    	
+    	E temp = before.next.value;
+    	
+    	before.next.next.prev = before;
+    	before.next = before.next.next;
+    	
     	size--;
     	
-    	return null;
+    	return temp;
     }
     
     public E set(int index, E element)
     {
-    	ListNode<E> elem = (ListNode) getNodeBeforeIndex(index);
+    	ListNode<E> elem = getNodeBeforeIndex(index);
+    	E temp = elem.next.value;
+    	elem.next.value = element;
     	
-    	return null;
+    	return temp;
     }
     
     public int size()
@@ -153,19 +162,16 @@ public class MyLinkedList<E>
     
     public String toString()
     {
-    	
-    	ListNode<E> curr = head.next;
+    	ListNode<E> curr = head;
     	String str = "[";
     	
-    	for(int i=0; i<size-1; i++)
+    	for(int i=0; i<size; i++)
     	{
-    		str += curr.value + ", ";
     		curr = curr.next;
+    		str += curr.value + ", ";
     	}
     	
-    	str+= curr.next.value+"]";
-    	
-    	return str;
+    	return str.substring(0, str.length()-2)+"]";//shhhh im lazy
     }
     
     private class ListNode<E>
