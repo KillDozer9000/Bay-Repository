@@ -112,6 +112,8 @@ public class MyLinkedList<E>
     {
         head.next = tail;
         tail.prev = head;
+        
+        size = 0;
     }
     
     public E get(int index)
