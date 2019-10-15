@@ -320,6 +320,17 @@ public class MyLinkedList<E> implements Iterable<E> //implements List<E>
         public E next()
         {
         	verifyModCount();
+        	
+        	if(hasNext())
+        	{
+        		ListNode temp = cursor.next;
+        		cursor = cursor.next;
+        		index++;
+        		
+        		return (E) temp.value;
+        	}
+        	
+        	throw new NoSuchElementException();
         }
         
         public void set(E o)
