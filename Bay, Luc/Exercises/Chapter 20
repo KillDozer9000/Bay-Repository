@@ -1,3 +1,5 @@
+Linked Lists
+
 R20.1 | Tom Dick Harry
 R20.2 | Harry Tom Dick
 R20.3 | Dick Tom Harry
@@ -15,3 +17,11 @@ P20.8 | ???
 R20.8 | adding and removing elements is much easier, but it is harder to access elements
 R20.9 | I would use an array so accessing the elements is easier. It would take much longer than with a list
 R20.10| I would use a list so I can easily add and subtract events. There wont be many elements so an array would not be necessary.
+
+Stacks and Queues
+
+R20.11 | You should store the cards in a queue
+R20.12 | ABC -> CBA -> CBA -> ABC Prints in the original order
+
+P20.13 | In DSStuff/p20/CircularArrayQueue
+P20.14 | checksize method in P20.13
