@@ -32,5 +32,11 @@ public class Calculator
 		enter();
 		int x = 0;
 	}
+	
+	public static boolean checksign(char s1, char s2)
+	{
+		
+		return false;
+	}
 
 }
