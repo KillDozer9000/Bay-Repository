@@ -22,17 +22,17 @@ public class Calculator
 				if(checksign(temp))
 					ops.push(temp);
 				else
-					operate();
+					while(!ops.isEmpty())
+						operate();
 			}
 				
 		}
-		
 	}
 	
 	
 	public static void main(String[] args) 
 	{
-		exp = "1 + 2";
+		exp = "1 + 2 + 3";
 		nums = new Stack<Double>();
 		ops = new Stack<Character>();
 		
@@ -42,6 +42,9 @@ public class Calculator
 	
 	public static boolean checksign(char s1)
 	{
+		if(ops.empty())
+			return true;
+		
 		char s2 = ops.lastElement();
 		int n1 = 0, n2 = 0;
 		
@@ -65,28 +68,46 @@ public class Calculator
 				break;
 		}
 		
-		return n1 > n2;
+		return n1 >= n2;
 	}
 	
 	public static void operate()
 	{
-		while(checksign())
-		{
+		char op = ops.pop();
 		Double n1 = nums.pop();
 		Double n2 = nums.pop();
-		Double n3 = 0.0;
-		
-		switch (ops.pop())
+	
+		switch (op)
 		{
-		case '+' : n3 = n1+n2; break;
-		case '-' : n3 = n1-n2; break;
-		case '*' : n3 = n1*n2; break;
-		case '/' : n3 = n1/n2; break;
-		case '^' : n3 = Math.pow(n1, n2); break;
+		case '+' : n1 += n2; break;
+		case '-' : n1 -= n2; break;
+		case '*' : n1 *= n2; break;
+		case '/' : n1 /= n2; break;
+		case '^' : n1 = Math.pow(n1, n2); break;
 		}
+	
+		nums.push(n1);
 		
-		nums.push(n3);
-		}
+		/*char op = ops.pop();
+		
+		while(checksign(op) && !ops.isEmpty())
+		{
+			Double n1 = nums.pop();
+			Double n2 = nums.pop();
+		
+			switch (op)
+			{
+			case '+' : n1 += n2; break;
+			case '-' : n1 -= n2; break;
+			case '*' : n1 *= n2; break;
+			case '/' : n1 /= n2; break;
+			case '^' : n1 = Math.pow(n1, n2); break;
+			}
+		
+			nums.push(n1);
+			//if(!ops.isEmpty())
+				op = ops.pop();
+		}*/
 	}
 
 }
