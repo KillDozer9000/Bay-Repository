@@ -17,14 +17,14 @@ public class Calculator
 		{
 			if(exp.charAt(i) == ' ') 							// element is complete
 			{
-				parse(elem);
-				elem = "";
+				parse(elem); 									// perform according operation on element
+				elem = "";										//reset string for next element
 			}
 			else												// element is not complete, continue adding
 				elem += exp.charAt(i);
 		}
 		
-		parse(elem);
+		parse(elem);											// perform operation on last element
 		while(!ops.isEmpty())									// take care of remaining expression
 			operate();
 		
@@ -38,11 +38,11 @@ public class Calculator
 			nums.push(Double.parseDouble(elem));
 		else													// element is a sign
 		{
-			if(elem.equals(")"))								// element is a closed parenthesis
+			if(elem.equals(")"))								// element is a )
 			{
-					while(!ops.lastElement().equals("("))		// operate until open parenthesis found on stack
+					while(!ops.lastElement().equals("("))		// operate until ( found on stack
 						operate();
-					ops.pop();
+					ops.pop();									// remove ( from stack
 			}
 			else if(checkprec(elem))							// element has higher prec, push to stack
 				ops.push(elem);
