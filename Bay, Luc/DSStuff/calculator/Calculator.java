@@ -7,7 +7,7 @@ public class Calculator
 {
 	static Stack<Double> nums = new Stack<Double>();
 	static Stack<String> ops = new Stack<String>();
-	static String exp = "2 * ( 13 - ( 1 + 6 ) )";		// Enter expression here-----------
+	static String exp = "1 / 0";		// Enter expression here-----------
 	
 	public static void main(String[] args) throws Exception 
 	{
@@ -97,8 +97,8 @@ public class Calculator
 		String op = ops.pop();
 		Double n1 = nums.pop(), n2 = nums.pop();
 		
-		if(op.equals("/") && n1 == 0)
-			throw new Exception("You can't / by 0 IDIOT");
+		//if(op.equals("/") && n1 == 0)
+			//throw new Exception("You can't / by 0 IDIOT");
 	
 		switch (op)
 		{
