@@ -32,7 +32,7 @@ public class Calculator
 		System.out.println("Answer: "+nums.pop());
 	}
 	
-	public static void parse(String elem) throws Exception
+	public static void parse(String elem) throws Exception 
 	{
 		if(isNumber(elem)) 										// element is #, push to stack
 			nums.push(Double.parseDouble(elem));
