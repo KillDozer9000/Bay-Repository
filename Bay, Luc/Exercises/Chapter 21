@@ -6,7 +6,15 @@ R21.5 | the contains method probably
 P21.1 | In p21/stringSet
 P21.2 | In p21/colorSet
 
-R21.1 | As set is unordered and a map is not
-R21.6 | No and yes
+R21.1 | As set is unordered and a map is not, keys too
+R21.6 | yes and no
 R21.7 | no
 P21.4 | In p21/studentMap
+
+Hashing Exercises
+
+R21.8  | 
+R21.9  | 
+R21.10 | 
+P21.6  | 
+P21.7  | 

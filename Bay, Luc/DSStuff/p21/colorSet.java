@@ -34,7 +34,7 @@ public class colorSet
 	
 	public static void add()
 	{
-		//set1.add(Color.BLACK);
+		set1.add(Color.BLACK);
 		set1.add(Color.BLUE);
 		set1.add(Color.CYAN);
 		set1.add(Color.DARK_GRAY);
