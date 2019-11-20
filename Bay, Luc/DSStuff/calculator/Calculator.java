@@ -7,7 +7,7 @@ public class Calculator
 {
 	static Stack<Double> nums = new Stack<Double>();
 	static Stack<String> ops = new Stack<String>();
-	static String exp = "1 / 0";		// Enter expression here-----------
+	static String exp = "5 + ( 8 * 3 ) / 6";		// Enter expression here-----------
 	
 	public static void main(String[] args) throws Exception 
 	{
