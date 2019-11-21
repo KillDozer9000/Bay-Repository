@@ -34,4 +34,14 @@ public class BankAccount
    {   
       return balance;
    }
+   
+   public int hashCode()
+   {
+	   return (int) (balance * 31 * 100);
+   }
+   
+   public boolean equals(BankAccount b1)
+   {
+	   return b1.hashCode() == hashCode();
+   }
 }
